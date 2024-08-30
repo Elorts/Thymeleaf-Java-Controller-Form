@@ -29,7 +29,6 @@ public class UserController {
         return "userForm";
     }
 
-    
     @PostMapping("/submit-user")
     public String submitUser(@ModelAttribute User user) {
         System.out.println("Username: " + user.getUsername());
