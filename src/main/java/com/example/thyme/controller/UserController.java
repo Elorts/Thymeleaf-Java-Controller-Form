@@ -24,7 +24,6 @@ public class UserController {
         user.setPassword("firstP");
 
         System.out.println("Password before html:" + user.getPassword());
-
         model.addAttribute("user", user);
         return "userForm";
     }
