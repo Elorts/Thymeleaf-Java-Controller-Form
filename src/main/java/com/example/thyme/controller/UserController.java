@@ -17,7 +17,6 @@ public class UserController {
     @GetMapping("/user-form")
     public String showForm(Model model) {
 
-        System.out.println("********************************************");
         User user = new User();
         user.setAddress(new Address()); // Initialize Address within User
         user.setPassword("firstP");
