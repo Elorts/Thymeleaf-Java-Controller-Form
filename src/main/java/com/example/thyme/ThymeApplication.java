@@ -9,4 +9,5 @@ public class ThymeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeApplication.class, args);
 	}
+
 }
