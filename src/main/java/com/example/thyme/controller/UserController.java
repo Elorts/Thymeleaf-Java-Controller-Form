@@ -39,7 +39,7 @@ public class UserController {
             System.out.println("Postal Code: " + address.getPostalCode());
         }
 
-        return "result"; // Redirect to a success page or another view
+        return "result";
     }
-    
+
 }
