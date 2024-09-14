@@ -37,7 +37,7 @@ public class UserController {
             System.out.println("Street: " + address.getStreet());
             System.out.println("City: " + address.getCity());
             System.out.println("Postal Code: " + address.getPostalCode());
-        }
+        }//
 
         return "result";
     }
