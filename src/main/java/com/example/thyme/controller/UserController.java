@@ -27,7 +27,6 @@ public class UserController {
     }
 
     @PostMapping("/submit-user")
-    
     public String submitUser(@ModelAttribute User user) {
         System.out.println("Username: " + user.getUsername());
         System.out.println("Password: " + user.getPassword());
