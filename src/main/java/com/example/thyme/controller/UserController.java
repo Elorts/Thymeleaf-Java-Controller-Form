@@ -20,7 +20,6 @@ public class UserController {
         User user = new User();
         user.setAddress(new Address()); // Initialize Address within User
         user.setPassword("firstP");
-
         System.out.println("Password before html:" + user.getPassword());
         model.addAttribute("user", user);
         return "userForm";
