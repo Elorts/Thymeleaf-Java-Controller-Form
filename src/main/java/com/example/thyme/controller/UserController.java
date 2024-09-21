@@ -2,9 +2,6 @@ package com.example.thyme.controller;
 
 import com.example.thyme.domain.User;
 import com.example.thyme.domain.Address;
-
-      
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
