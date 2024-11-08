@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User and Address Form</title>
+</head>
+<body>
+<form th:action="@{/submit-user}" th:object="${user}" method="post">
+    <!-- User Information -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" th:field="*{username}" /><br><br>
+
+<!--    <label for="open_password">Open Password:</label>-->
+<!--    <input type="text" id="open_password" th:field="*{password}" /><br><br>-->
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" th:field="*{password}" /><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" th:field="*{email}" /><br><br>
+
+    <!-- Address Information -->
+    <fieldset>
+        <legend>Address</legend>
+        <label for="street">Street:</label>
+        <input type="text" id="street" th:field="*{address.street}" /><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" th:field="*{address.city}" /><br><br>
+
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" th:field="*{address.postalCode}" /><br><br>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
